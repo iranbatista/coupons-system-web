@@ -1,0 +1,22 @@
+import type { AuthResponse } from "@/types";
+import { api } from "./api";
+
+export const authService = {
+  async register(email: string, password: string): Promise<AuthResponse> {
+    const { data } = await api.post<AuthResponse>("/auth/register", {
+      email,
+      password,
+    });
+
+    return data;
+  },
+
+  async login(email: string, password: string): Promise<AuthResponse> {
+    const { data } = await api.post<AuthResponse>("/auth/login", {
+      email,
+      password,
+    });
+
+    return data;
+  },
+};
