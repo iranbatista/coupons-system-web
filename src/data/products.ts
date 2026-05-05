@@ -43,4 +43,25 @@ export const products: Omit<CartItem, "quantity">[] = [
     image:
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80",
   },
+  {
+    id: "7",
+    name: "Meia Esportiva",
+    price: 14.9,
+    image:
+      "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=400&q=80",
+  },
+  {
+    id: "8",
+    name: "Scrunchie Colorido",
+    price: 9.9,
+    image:
+      "https://images.unsplash.com/photo-1617019114583-affb34d1b3cd?w=400&q=80",
+  },
+  {
+    id: "9",
+    name: "Carteira Slim",
+    price: 24.9,
+    image:
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?w=400&q=80",
+  },
 ];
